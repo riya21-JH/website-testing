@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kant Learning</title>
+    <!-- <style>
+
+      body{
+        font-size: 18px;
+      }
+        .top_row{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .top_row a{
+            text-decoration: none;
+            padding: 10px 20px;
+            color: black;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        .top_row a:hover {
+         background-color: #E6E6E3;   
+         color: #333;}
+
+
+#tagline {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: typing 2s steps(40, end) forwards;
+  font-size: 18px; /* adjust font size to your liking */
+  margin-top: 10px; /* add some space between the company name and tagline */
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+#imagecontainer {
+  position: relative;
+}
+
+#imagecontainer img {
+  
+  padding: 10px;
+  height: 450px; /* set the image height to 300 pixels */
+  width: 1000px;
+  display: none;
+  margin: 0 auto;
+}
+
+
+
+#imagecontainer img:first-child {
+  display: block;
+  
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(0, 0, 0, 0.5); /* Make buttons visible with a background color */
+
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px; /* Adjust border-radius for the next button */
+
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+#info{
+  padding: 20px;
+  text-align: center;
+}
+
+#info h1{
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+#info p{
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+#our_team {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+#our_team img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+#our_team h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#our_team p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+#mission table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 20px; /* add padding here */
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+tr:hover {background-color: #f5f5f5;}
+
+  tr:hover {background-color: #f5f5f5;}
+
+
+  #about-us > div {
+  text-align: center;
+}
+
+#our_team img {
+  display: block;
+  margin: 0 auto;
+}
+
+#our_team h2, #our_team p {
+  margin: 10px 0;
+}
+
+#projects > h1 {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  line-height: 1.5;
+            
+}
+
+#projects a{
+  padding: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px auto; /* Center the card horizontally */
+  width: 80%; /* Adjust width as needed */
+}
+
+.card table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.card th,
+.card td {
+  padding: 10px; /* Adjust padding as needed */
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.card th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.card tr:hover {
+  background-color: #f5f5f5;
+}
+
+#projects > a {
+  padding: 20px;
+  display: inline-block;
+}
+
+#our_team_{
+  padding: 20px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+#our_team {
+  background-color: #fff;
+  padding: 40px;
+}
+
+.team_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.team_member {
+  width: 30%;
+  margin: 20px;
+  background-color: #f7f7f7;
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.image_wrapper {
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.image_wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.info_wrapper {
+  text-align: center;
+}
+
+.info_wrapper h2 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.info_wrapper p {
+  font-size: 14px;
+  color: #666;
+}
+
+#process-container {
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.process-steps {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.process-steps li {
+  margin-bottom: 20px;
+  padding-left: 20px;
+  border-left: 3px solid #4CAF50;
+}
+
+.process-steps li h3 {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.process-steps li p {
+  margin: 0;
+}
+
+.image-container {
+  position: relative;
+  height: 300px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.image:nth-child(1) {
+  animation: appear 3s ease-in-out 1s infinite;
+}
+
+.image:nth-child(2) {
+  animation: appear 3s ease-in-out 4s infinite;
+}
+
+.image:nth-child(3) {
+  animation: appear 3s ease-in-out 7s infinite;
+}
+
+.steps-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.step-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.step-description {
+  display: none;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.step-description img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 10px;
+}
+.YT_container {
+        display: flex;
+        align-items: center; /* Align items to the top */
+        gap: 20px; /* Space between process-steps and video */
+    }
+    
+    .process-steps {
+        flex: 1; /* Take remaining space */
+    }
+    
+    .video-container {
+        flex-shrink: 0; /* Don't shrink the video */
+        overflow: hidden;
+    }
+    
+    iframe {
+        max-width: 100%; /* Ensure the video is responsive */
+        border-radius: 15px;
+
+    } 
+
+
+
+
+
+
+
+
+
+
+    </style> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <style>
+      body {
+        font-size: 18px;
+      }
+      .top_row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+      }
+
+      .top_row a {
+        text-decoration: none;
+        padding: 10px 20px;
+        color: black;
+        font-weight: bold;
+        border-radius: 5px;
+      }
+
+      .top_row a:hover {
+        background-color: #E6E6E3;
+        color: #333;
+      }
+
+      #tagline {
+        display: block;
+        overflow: hidden;
+        white-space: nowrap;
+        width: 0;
+        animation: typing 2s steps(40, end) forwards;
+        font-size: 18px;
+        margin-top: 10px;
+      }
+
+      @keyframes typing {
+        from { width: 0; }
+        to { width: 100%; }
+      }
+
+      #imagecontainer {
+        position: relative;
+        max-width: 100%;
+        overflow: hidden;
+      }
+
+      #imagecontainer img {
+        padding: 10px;
+        width: 1000px;
+        height: 450px;
+        display: none;
+        margin: 0 auto;
+      }
+
+      #imagecontainer img:first-child {
+        display: block;
+      }
+
+      .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+
+      .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+      }
+
+      #info {
+        padding: 20px;
+        text-align: center;
+      }
+
+      #info h1 {
+        font-size: 30px;
+        margin-bottom: 20px;
+      }
+
+      #info p {
+        font-size: 20px;
+        line-height: 1.5;
+      }
+
+      #our_team {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 20px;
+        margin-top: 20px;
+        border-radius: 5px;
+      }
+
+      #our_team img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      #our_team h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+      #our_team p {
+        font-size: 18px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      #mission table {
+        width: 100%;
+        border-collapse: collapse;
+        overflow: hidden;
+      }
+
+      th, td {
+        padding: 20px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+      }
+
+      th {
+        background-color: #4CAF50;
+        color: white;
+      }
+
+      tr:hover {background-color: #f5f5f5;}
+
+      #about-us > div {
+        text-align: center;
+      }
+
+      #projects > h1 {
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 30px;
+        line-height: 1.5;
+      }
+
+      #projects a {
+        padding: 20px;
+      }
+
+      .card {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin: 20px auto;
+        width: 80%;
+      }
+
+      .card table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      .card th,
+      .card td {
+        padding: 10px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+      }
+
+      .card th {
+        background-color: #4CAF50;
+        color: white;
+      }
+
+      .card tr:hover {
+        background-color: #f5f5f5;
+      }
+
+      #projects > a {
+        padding: 20px;
+        display: inline-block;
+      }
+
+      #our_team_ {
+        padding: 20px;
+        margin-top: 40px;
+        text-align: center;
+      }
+
+      .team_wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .team_member {
+        width: 30%;
+        margin: 20px;
+        background-color: #f7f7f7;
+        padding: 20px;
+        border: 1px solid #ddd;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .image_wrapper {
+        width: 100%;
+        height: 150px;
+        overflow: hidden;
+        border-radius: 50%;
+        margin-bottom: 10px;
+      }
+
+      .image_wrapper img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+
+      .info_wrapper {
+        text-align: center;
+      }
+
+      .info_wrapper h2 {
+        font-size: 18px;
+        margin-bottom: 5px;
+      }
+
+      .info_wrapper p {
+        font-size: 14px;
+        color: #666;
+      }
+
+      #process-container {
+        padding: 20px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+      }
+
+      .process-steps {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .process-steps li {
+        margin-bottom: 20px;
+        padding-left: 20px;
+        border-left: 3px solid #4CAF50;
+      }
+
+      .process-steps li h3 {
+        margin-top: 0;
+        margin-bottom: 5px;
+      }
+
+      .process-steps li p {
+        margin: 0;
+      }
+
+      .image-container {
+        position: relative;
+        height: 300px;
+        width: 100%;
+        overflow: hidden;
+      }
+
+      .image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+      }
+
+      .image:nth-child(1) {
+        animation: appear 3s ease-in-out 1s infinite;
+      }
+
+      .image:nth-child(2) {
+        animation: appear 3s ease-in-out 4s infinite;
+      }
+
+      .image:nth-child(3) {
+        animation: appear 3s ease-in-out 7s infinite;
+      }
+
+      .steps-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      .step-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        flex: 1;
+        margin: 10px;
+        min-width: 280px;
+      }
+
+      .step-container img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .YT_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .process-steps {
+        flex: 1;
+      }
+
+      .video-container {
+        flex-shrink: 0;
+        overflow: hidden;
+        width: 100%;
+      }
+
+      iframe {
+        max-width: 100%;
+        border-radius: 15px;
+      }
+
+      @media (min-width: 768px) {
+        .YT_container {
+          flex-direction: row;
+          align-items: flex-start;
+        }
+
+        .video-container {
+          max-width: 500px;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .top_row h1 {
+          font-size: 24px;
+        }
+
+        #info h1 {
+          font-size: 24px;
+        }
+
+        #info p {
+          font-size: 16px;
+        }
+
+        #our_team img {
+          width: 150px;
+          height: 150px;
+        }
+
+        #our_team h2 {
+          font-size: 20px;
+        }
+
+        #our_team p {
+          font-size: 16px;
+        }
+
+        .team_member {
+          width: 90%;
+          margin: 10px 0;
+        }
+
+        .step-container {
+          margin: 20px 0;
+        }
+      }
+    </style>
+</head>
+<body>
+
+    <div class="top_row">
+        <h1 style="color: red; font-family: 'Roboto', sans-serif;" >Kant Learning <span id="tagline" style="color: black; font-family: 'Roboto', sans-serif;">| A smarter way to learn</span></h1>
+        <a href="our team.html">Our Team</a>
+        <a href="#project">Projects</a>
+        <a href="help.html">How to Help</a>
+        <a href="#Downloads">Downloads</a>
+      </div>
+
+      <div class="container">
+        <div id="imagecontainer">
+            <img id="kant2" src="kant9.jpeg" alt="img2">
+            <img id="kant3" src="kant6.jpeg" alt="img3">
+            <img id="kant4" src="kant_award.jpeg" alt="img4">
+            <img id="kant5" src="kant11.jpeg" alt="img5">
+            <img id="kant6" src="kant10.jpeg" alt="img6">
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div id="info">
+          <h1>Kant Process: Engaging Students with Video Games Inspired Learning</h1>
+              <p>Our end-to-end learning system harnesses the energy and interest of students by providing a video game inspired learning environment. Developed by Boston, USA based software expert Hridayesh Kant, the Kant Process dramatically enhances the subject engagement for all students.</p>
+            
+              </div>
+              </div>
+
+        <div id="project" class="card">
+        <div id="projects">
+        <h1>Current Projects</h1>
+        <p style="text-align: center; font-size: 18px;">After remaining closed for few years due to Covid 19, We have regrouped, and have come back with even bigger implementations.
+
+        </p>
+          <table style="padding-left: 20px; font-size: 18px;">
+          <thead>
+            <tr>
+              <th>Education Department</th>
+              <th>Start date</th>
+              <th>No. of schools</th>
+              <th>No. of students</th>
+            </tr>
+            </thead>
+            
+            <tbody>
+              <tr>
+                <td>Directorate of Education, Govt. of NCT of Delhi</td>
+                <td>Nov 2022</td>
+                <td>470</td>
+                <td>120,000</td>
+              </tr>
+              
+              <tr>
+                <td>MCD (Municipal Corporation of Delhi)</td>
+                <td>Feb 2024</td>
+                <td>10 started as pilot.<br><br> 50 more schools are in work.<br><br> 
+                    If successful, we hope to do the rollout to all 1,500 MCD schools with more than half a million students.</td>
+                <td>2,500</td>
+              </tr>
+            </tbody>
+        </table>
+        <a href="https://drive.google.com/file/d/18u9vuAh2TnOYrE7gRFODAhIUDahUUFiS/view?usp=sharing" target="_blank">Know More</a>
+      </div>
+    </div>
+      
+
+    <div class="Mission" style="padding: 20px;">
+      <h2>Our Mission</h2>
+       <p>Access to best quality education for all, without the excuse of heavy investment required for quality education.</p>
+       <p>We are trying to enhance the current lecture-based education methodology by supplementing it with a low cost, self-driven practice system developed by us.</p>
+    </div>
+        
+
+    <div class="YT_container">
+      <div id="process-container">
+
+      <h2>What is Kant Process?</h2>
+      <p>This process is based on continuous evaluation of students in a competitive setting. Classroom is divided in multiple groups, and students are seated in front of TVs based on merit.</p>
+
+      <ol class="process-steps">
+        <li>
+          <h3>Step 1</h3>
+          <p>A class with multiple TVs is created to handle different learning levels.</p>
+        </li>
+
+        <li>
+          <h3>Step 2</h3>
+          <p>A set of rapid quizzes are displayed on TV.</p>
+        </li>
+        <li>
+          <h3>Step 3</h3>
+          <p>Students check the competing students' answers.</p>
+        </li>
+        <li>
+          <h3>Step 4</h3>
+          <p>Winners, if any, are moved up on a merit board and seats are exchanged.</p>
+        </li>
+        <li>
+          <h3>Step 5</h3>
+          <p>Between 15 to 25 quizzes are administered in an hour's time.</p>
+        </li>
+      </ol>        
+    </div>
+    <div class="video-container">
+        <h3 style="text-align: center; padding-top: 40px;">A short video of Kant Process</h3>    
+          <iframe width="500px" height="309px" src="https://www.youtube.com/embed/TsnDMquQHBI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+    
+    
+    
+
+
+    <div class="steps-container" style="padding-left: 20px; padding-right: 20px;">
+      <div class="step-container">
+        <img src="kant_process(1).jpeg" width="300px" height="200px" alt="Step 1" class="step-image">
+      </div>
+      <div class="arrow-container">
+        <img src="sideArrow.png" width="100px"alt="Arrow" class="arrow-image">
+      </div>
+      <div class="step-container">
+        <img src="kant_process(2).jpeg" width="300px" height="200px" alt="Step 2" class="step-image">
+      </div>
+      <div class="arrow-container">
+        <img src="sideArrow.png" alt="Arrow" width="100px" class="arrow-image">
+      </div>
+      <div class="step-container">
+        <img src="kant_process(3).jpeg" width="300px" height="200px" alt="Step 3" class="step-image">
+      </div>
+    </div>
+    
+
+    <div class="HowItWorks" style="padding: 20px; margin-top: 40px;">
+      <h2>How It Works?</h2>
+      <br>
+     <p>In the traditional system students are tested monthly and at the end of semesters. Students develop the tendency to pay attention when the exams are closer.</p> <br>
+
+     <p>‘Kant process’ nudges students to pay attention all the time by creating a continuous evaluation environment.</p> <br>
+
+     <p>Even if students do not study by themselves, the practice provided by 100-150 questions makes them familiar with the subject.</p> <br>
+    </div>
+
+    <div id="Downloads" style="padding: 20px;">
+      <h3>Download Centre</h3>
+      <ul>
+        <li>
+          <a href="https://drive.google.com/drive/folders/1a34JsIMJVpPNLdEPas_7a_wyOl3NCPol?usp=sharing" target="_blank">All test scripts available here</a>
+        </li>
+        <li>
+          <a href="https://drive.google.com/file/d/1nfvvvA2VfOn8i2DkTHuxRceTctQBJu1B/view?usp=sharing" target="_blank">Instruction Manual - Kant Process</a>
+        </li>
+        <li>
+          <a href="PresentationKantLearning.ppsx" target="_blank">Detailed Presentation for Kant Process</a>
+        </li>
+        <li>
+          <a href="kantProcessTests.pptx">Sample Evaluation Tests</a>
+        </li>
+      </ul>
+    </div>
+     
+
+
+
+
+
+    
+
+    <script>
+
+let slideIndex = 1;
+let slides = document.querySelectorAll('#imagecontainer img');
+let timer = null;
+const slideDuration = 3000;
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function showSlides(n) {
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[slideIndex - 1].style.display = "block";
+  startSlideShow();
+}
+
+function startSlideShow() {
+  clearTimeout(timer);
+  timer = setTimeout(() => {
+    showSlides(slideIndex += 1);
+  }, slideDuration);
+}
+
+showSlides(slideIndex);
+
+document.getElementById("imagecontainer").addEventListener("mouseover", function() {
+  clearTimeout(timer);
+});
+
+document.getElementById("imagecontainer").addEventListener("mouseout", function() {
+  startSlideShow();
+});
+
+
+    </script>
+</body>
+</html>
